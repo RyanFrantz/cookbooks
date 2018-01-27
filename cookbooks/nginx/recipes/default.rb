@@ -29,5 +29,5 @@ end
 
 # We're going to replace Apache soon...
 service "nginx" do
-  action [:disable, :stop]
+  action [:enable, :stop]
 end
