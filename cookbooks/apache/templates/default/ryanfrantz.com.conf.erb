@@ -1,9 +1,0 @@
-# vhost for my personal site
-<VirtualHost *:80>
-    ServerName www.ryanfrantz.com
-    ServerAdmin root@localhost
-    DocumentRoot /www/ryanfrantz.com/southpaw/_site
-    ErrorLog logs/ryanfrantz.com-error_log
-    LogFormat "%h %l %u %t \"%r\" %>s %b %D \"%{Referer}i\" \"%{User-Agent}i\"" combined_with_timing
-    CustomLog logs/ryanfrantz.com-access_log combined_with_timing
-</VirtualHost>
