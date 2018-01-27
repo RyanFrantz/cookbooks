@@ -12,6 +12,12 @@ group "wheel" do
 end
 
 # Set up homeshick
+directory '/home/ryan/.homesick/repos/homeshick' do
+  recursive true
+  owner 'ryan'
+  group 'ryan'
+end
+
 git '/home/ryan/.homesick/repos/homeshick' do
   repository 'git://github.com/andsens/homeshick.git'
   action :checkout
