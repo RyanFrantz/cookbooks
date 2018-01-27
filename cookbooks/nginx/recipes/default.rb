@@ -20,7 +20,6 @@ cookbook_file "#{nginx_conf_dir}/conf.d/ryanfrantz.com.conf" do
   mode 0644
 end
 
-# We're going to replace Apache soon...
 service "nginx" do
   action [:enable, :start]
 end
