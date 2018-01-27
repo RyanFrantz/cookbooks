@@ -12,7 +12,13 @@ group "wheel" do
 end
 
 # Set up homeshick
-directory '/home/ryan/.homesick/repos/homeshick' do
+homeshick_dirs = %w(
+  /home/ryan/.homesick
+  /home/ryan/.homesick/repos
+  /home/ryan/.homesick/repos/homeshick
+)
+homeshick_dirs.each do |d|
+directory d do
   recursive true
   owner 'ryan'
   group 'ryan'
