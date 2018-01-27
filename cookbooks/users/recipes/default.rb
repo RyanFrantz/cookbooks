@@ -18,10 +18,11 @@ homeshick_dirs = %w(
   /home/ryan/.homesick/repos/homeshick
 )
 homeshick_dirs.each do |d|
-directory d do
-  recursive true
-  owner 'ryan'
-  group 'ryan'
+  directory d do
+    recursive true
+    owner 'ryan'
+    group 'ryan'
+  end
 end
 
 git '/home/ryan/.homesick/repos/homeshick' do
