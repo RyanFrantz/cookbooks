@@ -1,6 +1,10 @@
-directory "/www/ryanfrantz.com" do
-  action :create
-  recursive true
+dirs = %w( /www /www/ryanfrantz.com )
+dirs.each do |d|
+  directory "/www/ryanfrantz.com" do
+    action :create
+    owner 'ryan'
+    group 'ryan'
+  end
 end
 
 blog_root = '/www/ryanfrantz.com/southpaw'
