@@ -1,6 +1,3 @@
 node.json
-cookbooks/anope
-cookbooks/sensitive
-cookbooks/unrealircd
 local-mode-cache/
 nodes/
