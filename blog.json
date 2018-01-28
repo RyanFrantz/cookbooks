@@ -1,0 +1,9 @@
+{
+    "run_list": [
+        "recipe[yum]",
+        "recipe[nginx]",
+        "recipe[system]",
+        "recipe[users]",
+        "recipe[ryanfrantz]"
+    ]
+}
